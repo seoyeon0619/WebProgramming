@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+let person = {"name":"이서연", "age":23, "phone":"010-0000-0000"};
+console.log(person);
+console.log(person.name);
+console.log(person["name"]);
+console.log(person.age);
+console.log(person["age"]);
+console.log(person.phone);
+console.log(person["phone"]);
+
+// 데이터 바꾸기
+person.name="홍길동";
+person.age=32;
+person.phone="010-1111-1111";
+console.log(person.name, person.age, person.phone);
+
+// Json배열 
+let personList = [
+	{"name":"홍길동", "age":30},
+	{"name":"김길동", "age":31},
+	{"name":"이길동", "age":32},
+	{"name":"박길동", "age":33},
+	{"name":"최길동", "age":34}
+];
+// 다 같은 문법
+console.log(personList[0]["name"]);
+console.log(personList[0].name);
+console.log(personList[0]['name']);
+</script>

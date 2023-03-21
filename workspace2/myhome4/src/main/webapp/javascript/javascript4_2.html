@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button type="button" style="color:#ff0000" class="button">배경색바꾸기1</button><br/>
+	<button type="button" style="color:#ff8800" class="button">배경색바꾸기2</button><br/>
+	<button type="button" style="color:#09b800" class="button" >배경색바꾸기3</button><br/>
+	<button type="button" style="color:#008ab8" class="button" >배경색바꾸기4</button><br/>
+	<button type="button" style="color:#d48fff" class="button" >배경색바꾸기5</button><br/>
+</body>
+</html>
+
+<script>
+	
+	document.getElementsByTagName("body")[0].style.background="#345678";
+	
+	window.onload=()=>{
+		buttons = document.getElementsByClassName("button");
+		for(i=0; i<buttons.length; i++)
+			{
+			// addEventListener 함수에 이벤트 자체를 매개변수로 전달
+			buttons[i].addEventListener("click", (e)=> {
+				console.log(e);
+				console.log(e.target); // 이벤트 발생 객체
+				body = document.getElementsByTagName("body")[0];
+				body.style.background = e.target.style.color;
+			})
+			}
+	}
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script type="text/javascript">
+// nums 배열로부터 짝수만 골라내기
+let nums = [20,3,14,2,15,16];
+
+for(i=0; i<nums.length; i++)
+	{
+	if(i % 2 ==0)
+		console.log(nums[i]);
+	}
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>성적처리</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+ let scoreList=[
+	 {name:"홍길동", kor:99, eng:80, math:98},
+	 {name:"김길동", kor:98, eng:95, math:43},
+	 {name:"이길동", kor:45, eng:100, math:28},
+	 {name:"박길동", kor:84, eng:64, math:67},
+	 {name:"최길동", kor:76, eng:85, math:94},
+ ]
+ 
+ // total 필드 추가
+ for(score of scoreList)
+	 {
+	 score.total = score.kor + score.eng + score.math;
+	 score.avg = score.total/3;
+	 }
+ 
+ // 둘 다 가능
+ scoreList.forEach((score)=>{
+	 console.log(score.name, score.kor, score.eng, score.math,
+			 score.total, score.avg);
+ })
+</script>

@@ -1,0 +1,14 @@
+body{
+    background-color: cornsilk;
+
+    background-repeat: repeat-x; 
+    color: #555555;
+    margin: 10px 10px 10px 10px;
+}
+
+h1{
+    text-align: center;
+    padding: 5px, 5px; /*2개만 주면 반복*/
+    border:1px solid #ffc1f0;
+    background-color: #e0fff5;
+}

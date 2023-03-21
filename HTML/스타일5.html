@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.relative {
+  position: relative;
+  top: 50px;
+  left: 30px;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.fixed{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 300px;
+    border: 3px solid hsl(219, 100%, 81%);
+}
+
+div.absolute{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid hsl(16, 100%, 76%);
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: hsl(283, 100%, 93%);
+  border: 2px solid #ae8ebd;
+}
+
+body{
+    margin-left:30px;
+}
+</style>
+</head>
+<body>
+
+<h2>position: relative;</h2>
+
+<p>An element with position: relative; is positioned relative to its normal position:</p>
+
+<div>
+    This div element has position: relative;
+</div>
+<div class="sticky">I am sticky!</div>
+
+<div class="relative">
+    This div element has position: relative;
+    </div>
+    
+<div class="fixed">
+    This div element has position: relative;
+</div>
+
+<div class="relative">This div element has position: relative;
+    <div class="absolute">This div element has position: absolute;</div>
+</div>
+
+
+
+</body>
+</html>
+

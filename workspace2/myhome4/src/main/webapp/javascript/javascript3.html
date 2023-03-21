@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript2</title>
+</head>
+<body>
+	<input type="text" id="nums1" ><br/>
+	<input type="text" id="nums2"><br/>
+	<input type="text" id="nums3"><br/>
+	<input type="text" id="nums4"><br/>
+	<input type="text" id="nums5"><br/>
+	<input type="text" id="nums6"><br/>
+	<input type="text" id="nums7"><br/>
+	<input type="text" id="nums8"><br/>
+	<input type="text" id="nums9"><br/>
+	<input type="text" id="nums10"><br/>
+-----------------------------------------------<br/>	
+	<input type="text" id="result"><br/>
+	<br/>
+	<button type="text" id="btnResult">결과확인</button>
+</body>
+</html>
+
+<script>
+	
+window.onload=()=>{
+	init();
+	
+	let btnResult = document.getElementById("btnResult");
+	btnResult.addEventListener("click", ()=>{
+		let result=0;
+		for(i=1; i<=10; i++)
+		{
+			num = document.getElementById("nums"+i);
+			result += parseInt(num.value);
+		}
+		document.getElementById("result").value = result;
+	})
+		
+}
+	
+function init()
+{
+	values=[1,2,3,4,5,6,7,8,9,10];
+
+	for(i=1; i<=10; i++)
+		{
+			var num = document.getElementById("nums"+i);
+			num.value = values[i-1];
+		}
+}
+</script>
+

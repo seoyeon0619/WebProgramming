@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+// 함수정의 
+function hello(name)
+{
+	console.log("안녕하세요" + name + "님")
+}
+// 함수호출
+hello("홍길동");
+console.log(hello("장길산")); 
+	// 에러가 발생하지 않음
+	// None 출력 
+	
+// 1~N까지 출력하는 함수 만들기
+function displayNumber(limit)
+	{
+		for(i=1; i<=limit; i++)
+			{
+			console.log("i=", i);
+			}
+	}
+displayNumber(10);
+displayNumber(5);
+
+// 매개변수에 기본값 부여 할 수 있음
+// overloading 지원하지않음
+
+function displayNumber2(limit=10)
+{
+	for(i=1; i<=limit; i++)
+		{
+		console.log("i=", i);
+		}
+}
+displayNumber2(); // 기본값 적용
+displayNumber2(5); // 마치 함수를 여러개 만든 것처럼 작동
+
+function add(x=10, y=20, z=30)
+{
+	console.log("x=", x);	
+	console.log("y=", y);	
+	console.log("z=", z);	
+	return x+y+z;
+}
+
+console.log(add()		); // 60
+console.log(add(1)		); // 51
+console.log(add(1,2,)	); // 33
+console.log(add(1,2,3)	); // 6
+
+function myfunc(a, b, c=1, d=2)
+{
+	console.log("a=", a);
+	console.log("b=", b);
+	console.log("c=", c);
+	console.log("d=", d);
+	}
+
+myfunc();
+myfunc(10);
+myfunc(10, 20);
+
+</script>

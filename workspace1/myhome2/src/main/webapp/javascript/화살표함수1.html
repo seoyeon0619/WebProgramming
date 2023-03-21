@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>화살표함수</h1>
+	<p> 화살표 함수는 함수가 비교적 짧고 간단해서 별도의 함수를 만들기에는 애매하다 </p>
+	
+	<pre>
+	일반함수
+	
+	function add(a, b){
+		return a+b
+	}
+	
+	함수표현식
+	add = function(a, b) {
+		return a+b
+	}
+	
+	화살표함수
+	add = (a, b)=> {
+		return a+b
+	}
+	</pre>
+	
+</body>
+</html>
+<script>
+function add1(a, b){
+	return a+b;	
+}
+
+add2 = function(a, b){
+	return a+b;
+}
+
+add3 = (a, b)=>{
+	return a+b;
+}
+console.log(add1(5,7));
+console.log(add2(5,7));
+console.log(add3(5,7));
+</script>

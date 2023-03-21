@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript1</title>
+</head>
+<body>
+	<h1>객체접근방법</h1>
+
+	
+	<h3 id = "language1">Java</h3>
+	<h3 id = "language2">JSP</h3>
+	<h3 id = "language3">Servlet</h3>
+	<h3 id = "language4">React</h3>
+	
+</body>
+</html>
+
+<script>
+	// id로 객체 접근
+	var ob1 = document.getElementById("language1");
+	console.log(ob1);
+	console.log(ob1.length);
+
+	color = ["", "magenta", "yellow", "gray", "blue"];
+	for(i=1; i<5; i++)
+		{
+		document.getElementById("language"+i).style.color = color[i];
+		}
+	
+</script>

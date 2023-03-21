@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+// 문장 끝에 세미콜론을 붙여야함
+// 그러나 붙이지 않아도 자동으로 붙여줌
+// 문제는 [] 앞에 ; 생략은 오류가 발생하므로 가급적 ;는 써주는 것이 좋음
+
+alert("화면에 경고창 띄울때 사용");
+alert("세미콜론 생략가능");
+// 람다식-함수를 쓰고 버림
+// 간단한 함수를 임시로 만들어서 쓰고 버림
+[1,2,3].forEach(console.log);
+// [1,2,3] 배열 : 객체가 됨
+// forEach 배열의 각요소마다 ForEach에게 전달한 함수를 호출
+	// 앞에 세미콜론이 없으면 Console에 에러 발생
+// 즉, console.log(1), console.log(2), console.log(3) 실행
+</script>

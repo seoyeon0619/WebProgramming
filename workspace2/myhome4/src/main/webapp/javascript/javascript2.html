@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript2</title>
+</head>
+<body>
+	<input type="text" name="nums" ><br/>
+	<input type="text" name="nums"><br/>
+	<input type="text" name="nums"><br/>
+	<input type="text" name="nums"><br/>
+	<input type="text" name="nums"><br/>
+	<input type="text" name="nums"><br/>
+	<input type="text" name="nums"><br/>
+	<input type="text" name="nums"><br/>
+	<input type="text" name="nums"><br/>
+	<input type="text" name="nums"><br/>
+-----------------------------------------------<br/>	
+	<input type="text" name="result"><br/>
+	<br/>
+	<button type="text" onclick="" id="btnResult">결과확인</button>
+</body>
+</html>
+
+<script>
+	
+window.onload=()=>{
+	init();
+	
+	let btnResult = document.getElementById("btnResult");
+	btnResult.addEventListener("click", ()=>{
+		let result=0;
+		nums = document.getElementsByName("nums");
+		for(i=0; i<nums.length; i++)
+		{
+			result += parseInt(nums[i].value);
+		}
+		document.getElementsByName("result")[0].value=result;
+	})
+		
+}
+	
+function init()
+{
+	values=[10,1,2,3,4,5,6,7,8,9,10];
+	nums = document.getElementsByName("nums");
+	result = document.getElementsByName("result");
+	
+	for(i=0; i<nums.length; i++)
+		{
+			nums[i].value = values[i];
+		}
+}
+</script>
+

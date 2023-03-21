@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+		h1{
+           text-align: center; 
+           color: #e0d2ff;
+        }
+        a{
+            width: 200px;
+            height: 120px;
+            padding: 10px 10px;
+            background-color: hsl(0, 100%, 91%);
+            font-size: 20pt;
+        }
+
+        a:link {
+            color: red;
+            text-decoration: none;
+        }
+        a:hover {
+             background-color: rgb(88, 88, 88);
+             color: aliceblue;
+        }
+
+        a:active {
+            background-color: hsl(331, 100%, 69%);
+        } 
+    </style>
+</head>
+<body>
+<%
+	// 자바 코드를 둘 수 있음
+	String hello = "서연";
+	
+%>
+<h1><%=hello%></h1>
+<a href="<%=request.getContextPath()%>/자기소개.jsp">자기소개</a>
+<a href="<%=request.getContextPath()%>/연습1.jsp">연습1</a>
+<a href="<%=request.getContextPath()%>/연습1.jsp">연습1</a>
+<a href="<%=request.getContextPath()%>/연습1.jsp">연습1</a>
+</body>
+</html>

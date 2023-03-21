@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>구구단</title>
+</head>
+<body>
+	<form name="myform">
+	단을 입력하세요
+	<input type="text" name="dan" id="dan"><br/>
+	<button id="btnPress" type="button">구구단 보기</button>
+	</form>
+	
+	<div id="result">
+	
+	</div>
+</body>
+</html>
+
+<script>
+window.onload=()=>{
+	var btnPress = document.getElementById("btnPress");
+	btnPress.addEventListener("click", ()=>{
+		console.log("호출");
+		result = "";
+		dan = document.getElementById("dan").value;
+		for(i=1; i<=9; i++)
+		{
+			result += dan + "×" + i + "=" + dan*i + "<br/>";
+		}
+		document.getElementById("result").innerHTML = result;
+	});
+}
+
+</script>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>표만들기</h1>
+    <table border="1" cellspacing="0" width="80%">
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+            <td>1행3열</td>
+        </tr>
+        <tr>
+            <td>2행1열</td>
+            <td>2행2열</td>
+            <td>2행3열</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>표 만들기2</h1>
+    <table style="width: 80%; border: 1px solid #ffc0c0; margin: auto;">
+        <colgroup>
+            <col width="12%">
+            <col width="*"> <!--나머지가 몇 퍼센트인지 계산해줌-->
+            <col width="12%">
+            <col width="12%">
+            <col width="12%"> 
+        </colgroup>
+        <thead>
+            <tr>
+                <th style="border:1px solid #ffc0c0">번호</th>
+                <th style="border:1px solid #ffc0c0">제목</th>
+                <th style="border:1px solid #ffc0c0">작성자</th>
+                <th style="border:1px solid #ffc0c0">작성일</th>
+                <th style="border:1px solid #ffc0c0">조회수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>html이란 무엇인가</td>
+                <td>홍길동</td>
+                <td>22-12-27</td>
+                <td>522</td>
+            </tr>           
+        </tbody>
+    </table>
+    <hr>
+    <p id="summary">테이블에 대한 설명</p> <!--id값은 한 페이지당 하나만 가능-->
+    <table style="width: 60%;" border="1" aria-describedby="summary">
+        <caption>열합치기</caption>
+        <colgroup> 
+            <col width="20%">
+            <col width="30%"> 
+            <col width="20%">
+            <col width="30%">
+        </colgroup>
+    <tr>
+        <th>이름</th>
+        <td></td>
+        <th>연락처</th>
+        <td></td>
+    </tr>
+    <tr>
+        <th>주소</th>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <th>자기소개</th>
+        <td colspan="3"></td>
+    </tr>
+    </table>
+</body>
+</html>

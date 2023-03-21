@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 onclick="goDisplay()">자바스크립트</h1>
+	<p>자바스크립트는 브라우저에서 사용되는 클라이언트 스크립트 언어이다</p>
+	<p id="contents" style="display:none">번역기는 브라우저이고 인터프리터 언어이다. 인터프리터 언어는 
+		한줄씩 읽어서 해석해서 바로 실행한다. 보통 교육용이나 간단한 일을 하기 윟나 언어로 생각되었는데, 
+		현재 파이썬도 인터프리터언어이다.
+		파이썬이 딥러닝등의 업무등을 수행하고 웹프레임워크도 제한없이 일을 하는 것으로 보아 교육용언어라는 인식은 불식되었다.
+	<p>	인터프리터 언어는 미리 변수를 선언할 필요가 없다
+		모든 데이터 타입은 참조이므로 별도의 타입을 지정할 필요도 없다.
+		그래서 변수를 선언할 경우 var 키워드를 사용한다. </p>
+	<p>	2009년에 크롬 개발자들이 자바스크립트 언어의 가능성을 발견하고
+		브라우저에 있는 엔진인 V8을 브라우저에서 독립시켜 별도의 엔진으로 만들었다.</p>
+	<p>	그게 지금의 node.js이다. node.js는 자바스크립트와 유사한 언어지만 자바스크립트는 아니다.
+		node.js는 서버를 만들 수 있는 서버스크립트언어이고, 현재 자바스크립트 라이브러리들인 
+		jquery, angular, react, vue 등이 node.js에서 작동되도록 설계되었다.</p> 
+	<p>	앞으로 자바스크립트의 역할이 훨씬 커져서 많은 공부를 해야 한다.</p>
+	<p>	2015년에 모던스크립트가 발표되었고 이때 자바스크립트의 문법에 많은 변화가 생겼다.</p>
+</body>
+</html>
+
+<script>
+function goDisplay() {
+	// p태그에 접근하려면 document.getElementById("id명")
+	var p = document.getElementById("contents"); // 참조만 가져옴
+	p.style.display = "block"; // none과 block은 반대
+}
+</script>

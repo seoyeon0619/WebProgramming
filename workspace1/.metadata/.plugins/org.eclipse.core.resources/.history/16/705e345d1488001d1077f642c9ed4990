@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+var x = 10;
+var y = 20;
+var z;
+
+z = x + y;
+console.log(z);
+</script>

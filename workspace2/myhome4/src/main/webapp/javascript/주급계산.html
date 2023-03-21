@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>주급계산</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+let payList=[
+	 {name:"홍길동", weektime:35, timepay:10000},
+	 {name:"김길동", weektime:35, timepay:11000},
+	 {name:"이길동", weektime:40, timepay:12000},
+	 {name:"박길동", weektime:20, timepay:13000},
+	 {name:"최길동", weektime:15, timepay:14000},
+]
+
+for(pay of payList)
+	 {
+	 pay.pay = pay.weektime * pay.timepay;
+	 
+	 pay.plus = 0;
+	 if (pay.weektime>20) 
+	 {
+		 pay.plus = (pay.weektime - 20) * pay.timepay * 0.5;
+		}
+	 
+	 pay.total = pay.pay + pay.plus;
+	 
+	 console.log(pay.name, pay.weektime, pay.timepay, pay.plus, pay.total);
+	 }
+</script>

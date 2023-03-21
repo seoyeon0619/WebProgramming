@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>json연습2</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+// 배열에 json을 두고 json안에 배열을 두고 ...
+let dataList = {
+		"totalCnt" : 5,
+		"data" : [
+			{id:1, title:"제목1", writer:"작성자1", contents:"내용1"},
+			{id:2, title:"제목2", writer:"작성자2", contents:"내용2"},
+			{id:3, title:"제목3", writer:"작성자3", contents:"내용3"},
+			{id:4, title:"제목4", writer:"작성자4", contents:"내용4"},
+			{id:5, title:"제목5", writer:"작성자5", contents:"내용5"}
+		]
+}
+
+console.log("전체 데이터 개수", dataList.totalCnt);
+// of연산자 : 배열에서 하나씩 꺼내서 item에 전달
+for(item of dataList.data)
+	{
+	console.log(item.id, item.title, item.writer, item.contents);
+	}
+
+// 람다, forEach 함수 : 매개변수가 하나, 반환값 없는 람다 함수 주소를 전달
+dataList.data.forEach((item)=> {
+	console.log(item.id, item.title, item.writer, item.contents);
+});
+</script>

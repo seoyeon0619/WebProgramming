@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표2</title>
+    
+    <style>
+        /* css - cascade style sheet*/
+        table{
+            whidth:70%;
+            border:1qx solid #222;
+            border-collapse: collapse;
+        }
+        thead, tfoot{
+            background: #eee; /* 배경에 이미지나 색상 지정 가능*/
+            /*background-color : 배경에 색상만 지정 가능*/
+        }
+        th, td{
+            border: 1px solid #ccc; /*글자 색상*/
+            padding: 5px; /*글자와 선 사이의 여백*/
+            font-size: 0.8em; /*em은 글자 크기 단위 */
+        }
+    </style>
+
+</head>
+<body>
+    <h1>행합치기(rowspan)</h1>
+    <table border="1">
+        <tr>
+            <td rowspan="2">자산:현금</td>
+            <td>부채:차입금</td>
+        </tr>
+        <tr>
+            <td>자본:자본금, 이익잉여금</td>
+        </tr>
+    </table>
+    <hr>
+    <table width="80%" border="1" cellspacing="0">
+        <caption>요안도라 객실</caption>
+        <colgroup>
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>방이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>유채방</td>
+                <td>여성 도미토리</td>
+                <td rowspan="3">4인실</td>
+                <td rowspan="4">1인 20,000원</td>
+            </tr>
+            <tr>
+                <td rowspan="2">동백방</td>
+                <td>동성 도미토리</td>
+            </tr>
+            <tr>
+                <td>가족 1팀</td>
+            </tr>
+            <tr>
+                <td>천혜향방</td>
+                <td>-</td>
+                <td>2인실</td>
+            </tr>
+        </tbody>
+       <tfoot>
+        <tr>
+            <td colspan="4">바깥채 전체를 렌트합니다</td>
+        </tr>
+       </tfoot>
+        
+    </table>
+</body>
+</html>

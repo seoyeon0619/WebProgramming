@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+// 함수정의 
+function hello(name)
+{
+	console.log("안녕하세요" + name + "님")
+}
+// 함수호출
+hello("홍길동");
+console.log(hello("장길산")); 
+	// 에러가 발생하지 않음
+	// None 출력 
+</script>

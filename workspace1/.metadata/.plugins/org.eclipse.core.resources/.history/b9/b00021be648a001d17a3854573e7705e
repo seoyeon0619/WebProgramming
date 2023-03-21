@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="myform">
+	단을 입력하세요 : 
+	<input type="text" name="dan" id="dan"><br/>
+	<button id="btnPress" type="button">구구단 보기</button>
+	</form>
+	
+	<div id="result">
+	
+	</div>
+</body>
+</html>
+
+<script>
+
+function goSend(oper){
+	var frm = document.myform; 
+	frm.operator.value = oper;
+	frm.action = "<%=request.getContextPath()%>/구구단결과.jsp";
+	frm.method="POST";
+	frm.submit(); 
+}
+</script>

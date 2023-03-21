@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script type="text/javascript">
+// nums 배열로부터 짝수만 골라내기
+let nums = [20,3,14,2,15,16];
+
+//기존 방식
+for(i=0; i<nums.length; i++)
+	{
+	if(nums[i] % 2 ==0)
+		console.log(nums[i]);
+	}
+
+// 새로운 배열을 만들려면
+let evens=[];
+for(i=0; i<nums.length; i++)
+{
+if(nums[i] % 2 == 0)
+	evens.push(nums[i]);
+}
+console.log(evens);
+
+evens = nums.filter();
+console.log(evens);
+</script>
